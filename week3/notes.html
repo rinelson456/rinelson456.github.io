@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Week 3</title>
+    <link rel="stylesheet" href="styles/week3.css">
+</head>
+
+<body>
+    <div>
+        <h1><b>Chapter 5,6, and 7 + some other things</b></h1>
+        <p>CHAP 3 NOTES<br><br> -The value of this is evaluated during the run-time, depending on the context. <br> -The rule is simple: if obj.f() is called, then this is obj during the call of f <br> -In JavaScript this is “free”, its value is evaluated
+            at call-time and does not depend on where the method was declared, but rather on what object is “before the dot”. <br> -Objects are often used to keep any related information and functionality together in the same place. <br> -An object literal
+            is an object that is created directly in the language by wrapping all its properties and methods in curly braces {} <br>
+            <br> This is an object literal<br> const superman = {<br> name: 'Superman',<br> 'real name': 'Clark Kent',<br> height: 75,<br> weight: 235,<br> hero: true,<br> villain: false,<br> allies: ['Batman','Supergirl','Superboy'],<br> fly() {<br>            return 'Up, up and away!';<br> } <br>};
+            <br>
+            <br> -Poperties in an object are mutable, so things can be added or removed <br>
+            <br> This is how to create an 'object' <br> const spiderman = {};
+            <br>
+            <br> -Use dot notation to access certain properties in objects like superman.name <br> -If a property does not exist "undefined" is returned <br> -You can add properties using something like this: superman.city = value; <br> -You can also
+            change a value using the assignment operator <br> -You can remove properties by using: delete superman.fly <br> -You can also nest objects in each other, so you could create a Justice League object and fill it will all the superheroes and
+            their unique characteristics <br> -JSON is included in javascript and is used for storing data <br> -The Document Object Model, or DOM for short, represents an HTML document as a network of connected nodes that form a tree-like structure.<br>            -Document.body returns the body element of a web page. <br> -Document.images returns a node list of all the images in the document. <br> -Document.links returns a node list of all the <a> elements and <area>
+                elements that have an href attribute. <br>
+                -Document.anchors returns a node list of all the <a> elements that have a name
+                    attribute. <br>
+                -Document.forms returns a node list of all the forms in the document. This will
+                be used when we cover forms in Chapter 8. <br>
+                -The getElementById() method does exactly what it says on the tin. It returns a
+                reference to the element with a unique id attribute that is given as an argument. <br>
+                -getElementsByTagName() will return a live node list of all the elements with the
+                tag name that is provided as an argument. <br>
+                -getElementsByClassName() will return a live node list of all elements that have
+                the class name that is supplied as an argument. <br>
+                -The document.querySelector() method allows you to use CSS notation to find
+                the first element in the document that matches a CSS selector provided as an
+                argument. <br>
+                -The getAttribute() method returns the value of the attribute provided as an
+                argument <br>
+                -The setAttribute can change the value of an element’s attributes. It takes two
+                arguments: the attribute that you wish to change, and the new value of that
+                attribute. <br>
+                -If an element does not have an attribute, the setAttribute method can be used to
+                add it to the element. <br>
+                -className property that allows the class
+                of an element to be set directly <br>
+                -The classList property is a list of all the classes an element has. <br>
+                -The toggle method is a particularly useful method that will add a class if an
+                element doesn’t have it already <br>
+                -The contains method will check to see if an element has a particular class <br>
+                -The document object has a createElement() method that takes a tag name as a
+                parameter and returns that element. <br>
+                -A text node can be created using the document.createTextNode() method. It
+                takes a parameter, which is a string containing the text that goes in the node.<br>
+                -appendChild() adds another node as a child node <br>
+                -Every element object has textContent <br>
+                -textContent allows you to add text node to an element without needing to append it <br>
+                -The insertBefore() method will place a new element before another element <br>
+                -The addEventListener() method is called on a node object, the node to which
+                the event listener is being applied. <br> <br>
+                -These are a list of events: click, mousedown, mouseup, dblclick, mouseover, mouseout, mousemove, keydown, keypress, and keyup <br><br>
+                -There are also similar events for touchscreen devices <br>
+                -An event listener can be removed using the removeEventListener() method. <br>
+                -preventDefault() is a method of the event object that can be used inside the
+                callback function to stop the default behavior happening <br>
+                -Event propagation is the order the events fire on each element. <br>
+                -Event delegation is when an event listener is added to a parent element to
+                capture events that happen to its children elements.<br>
+                
+                
+                
+        </p>
+    </div>
+</body>
+
+<footer>
+    &copy; 2020 | Notes | Riley Nelson <br>
+    <li><a href="index.html">Back to Week 3</a></li>
+            </footer>
+
+</html>

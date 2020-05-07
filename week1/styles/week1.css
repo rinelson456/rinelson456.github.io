@@ -1,0 +1,52 @@
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background: salmon;
+}
+
+.show li {
+    display: block;
+}
+
+div p {
+    text-align: left;
+    margin: auto;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+div {
+    text-align: center;
+}
+
+header h3 {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+main {
+    margin: auto;
+    width: 50%;
+    text-align: center
+}
+
+h4 {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+footer {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
