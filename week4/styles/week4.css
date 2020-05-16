@@ -21,6 +21,8 @@ nav ul li a {
     padding: 10px;
     text-decoration: none;
     background: rgb(252, 160, 150);
+    width: auto;
+    min-width: 200px;
 }
 
 .show li {
