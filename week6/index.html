@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 5</title>
-    <link rel="stylesheet" href="/week5/styles/week5.css">
+    <title>Week 6</title>
+    <link rel="stylesheet" href="/week6/styles/week6.css">
 </head>
 
 <body>
@@ -16,8 +16,8 @@
             <li><a href="/week2/index.html">Week 2</a></li>
             <li><a href="/week3/index.html">Week 3</a></li>
             <li><a href="/week4/index.html">Week 4</a></li>
-            <li><a href="index.html">Week 5</a></li>
-            <li><a href="/week6/index.html">Week 6</a></li>
+            <li><a href="/week5/index.html">Week 5</a></li>
+            <li><a href="index.html">Week 6</a></li>
             <li><a href="week7">Week 7</a></li>
             <li><a href="week8">Week 8</a></li>
             <li><a href="week9">Week 9</a></li>
@@ -30,22 +30,26 @@
     </nav>
 
     <header>
-        <h1 style="text-align:center;">Team Activity Week 5</h3>
     </header>
 
     <main>
         <header>
-            <h1>Great Hikes</h1>
+            <h1>To Do</h1>
         </header>
 
 
         <main>
-            <div id="hikes"></div>
+            <div id="toDo"></div>
+
+            <div class="input">
+                <form>
+                    To Do: <input type="text" id="name"></input>
+                    Due Date:<input type="date" id="completeDate"></input>
+                    <button type="submit">+</button>
+                </form>
+            </div>
         </main>
 
-        <div>
-            <li><a href="/week5/notes.html">Reading Notes</a>
-        </div>
         <br>
 
     </main>
@@ -53,8 +57,7 @@
         &copy; 2020 | Porfolio | Riley Nelson
     </footer>
 
-    <script src="js/main.js"></script>
-    <script type="module" src="hike.js"></script>
+    <script type="module" src="toDo.js"></script>
     <script type="module" src="javascript.js"></script>
 </body>
 
