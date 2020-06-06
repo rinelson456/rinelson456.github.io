@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Week 7</title>
+    <link rel="stylesheet" href="/week7/styles/week7.css">
+</head>
+
+<body>
+    <div>
+        <h1><b>Chapter 11, and 13</b></h1> <br>
+        <p>
+            - In JavaScript, functions are first-class objects, which means they can be passed around in the same way as every other value.<br> - all functions have a length property that returns the number of parameters the function has<br> -The call()
+            method can be used to set the value of this inside a function to an object that is provided as the first argument.<br> -An Immediately Invoked Function Expression – or IIFE (pronounced “iffy”) – is an anonymous function that, as the name suggests,
+            is invoked as soon as it’s defined
+            <br> -An IIFE can be used to enclose a block of code inside its own private scope so it doesn’t interfere with any other part of the program.<br> -A recursive function is one that invokes itself until a certain condition is met.<br> -JavaScript
+            is a single-threaded environment, which means only one piece of code will ever be processed at a time.<br> -Creating asynchronous code has lead to messy callbacks also known as callback hell. <br> -A promise represents the future result of
+            an asynchronous operation.<br> -When a promise is created, it calls an asynchronous operation and is then said to be pending. It remains in this state while the operation is taking place.<br> -A promise is created using a constructor function.
+            This takes a function called an executor as an argument. You can see an example here: <br><br> const promise = new Promise( (resolve, reject) => {<br> // initialization code goes here<br> if (success) {<br> resolve(value);
+            <br> } <br> else {<br> reject(error);
+            <br> }
+            <br> });
+            <br><br> -Once a promise has been settled, the then() method can be used to deal with the outcome.
+            <br> -Alternatively, the catch() method can be used to specify what to do if the operation fails instead.<br> -A closure is a reference to a variable that was created inside the scope of another function, but is then kept alive and used in
+            another part of the program.<br> -A closure is formed when the inner function is returned by the outer function, maintaining access to any variables declared inside the enclosing function.<br> -A pure function is a function that adheres to
+            the following rules:<br> 1) The return value of a pure function should only depend on the values provided as arguments. It doesn’t rely on values from somewhere else in the program.
+            <br> 2) There are no side-effects. A pure function doesn’t change any values or data elsewhere in the program. It only makes non-destructive data transformations and returns new values, rather than altering any of the underlying data.<br>            3) Referential transparency. Given the same arguments, a pure function will always return the same result.<br>
+
+
+        </p>
+
+    </div>
+</body>
+
+<footer>
+    <li><a href="/week7/index.html">Back to Week 7</a></li>
+    <br> &copy; 2020 | Notes | Riley Nelson <br>
+</footer>
+
+</html>
