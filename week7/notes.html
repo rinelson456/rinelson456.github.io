@@ -26,8 +26,14 @@
             <br> -Alternatively, the catch() method can be used to specify what to do if the operation fails instead.<br> -A closure is a reference to a variable that was created inside the scope of another function, but is then kept alive and used in
             another part of the program.<br> -A closure is formed when the inner function is returned by the outer function, maintaining access to any variables declared inside the enclosing function.<br> -A pure function is a function that adheres to
             the following rules:<br> 1) The return value of a pure function should only depend on the values provided as arguments. It doesn’t rely on values from somewhere else in the program.
-            <br> 2) There are no side-effects. A pure function doesn’t change any values or data elsewhere in the program. It only makes non-destructive data transformations and returns new values, rather than altering any of the underlying data.<br>            3) Referential transparency. Given the same arguments, a pure function will always return the same result.<br>
-
+            <br> 2) There are no side-effects. A pure function doesn’t change any values or data elsewhere in the program. It only makes non-destructive data transformations and returns new values, rather than altering any of the underlying data.<br>            3) Referential transparency. Given the same arguments, a pure function will always return the same result.<br> -Ajax is a technique that allows web pages to communicate asynchronously with a server
+            <br> -Ajax is an acronym from: Asynchronous, JavaScript, XML <br> -The Fetch API provides a global fetch() method that only has one mandatory argument. <br> -A basic example of fetch is as follows:<br><br> fetch('https://example.com/data')
+            <br> .then( // code that handles the response )<br> .catch( // code that runs if the server returns an error )<br><br> -The Fetch API introduced the Response interface that deals with the object that’s returned when the promise is fulfilled.
+            <br> -This is an example of response:<br><br> const url = 'https:example.com/data';<br><br> fetch(url)
+            <br> .then((response) => {<br> if(response.ok) {<br> return response;<br> }
+            <br><br> -The redirect() method can be used to redirect to another URL.<br> -The text() method takes a stream of text from the response, reads it to completion and then returns a promise that resolves to a USVSting object that can be treated
+            as a string in JavaScript.<br> -The blob() method is used to read a file of raw data, such as an image or a spreadsheet. Once it has read the whole file, it returns a promise that resolves with a blob object.<br> -The json() method is used
+            to deal with these by transforming a stream of JSON data into a promise that resolves to a JavaScript object.<br> -The Fetch API includes the FormData interface, which makes it much easier to submit information in forms using Ajax.<br>
 
         </p>
 
