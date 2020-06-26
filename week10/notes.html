@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Week 10</title>
+    <link rel="stylesheet" href="/week8/styles/week8.css">
+</head>
+
+<body>
+    <div>
+        <h1><b>Week 10 Readings</b></h1> <br>
+        <p>
+            -The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses.<br> -It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously
+            across the network.<br> -The fetch specification differs from jQuery.ajax() in three main ways:<br><br> -The Promise returned from fetch() won’t reject on HTTP error status even if the response is an HTTP 404 or 500. Instead, it will resolve
+            normally (with ok status set to false), and it will only reject on network failure or if anything prevented the request from completing.<br> -fetch() won't can receive cross-site cookies; you can’t can establish a cross site session using
+            fetch. Set-Cookie headers from other sites are silently ignored.<br> -fetch won’t send cookies, unless you set the credentials init option. (Since Aug 25, 2017. The spec changed the default credentials policy to same-origin. Firefox changed
+            since 61.0b13.)<br><br> -When you enter data, the browser and/or the web server will check to see that the data is in the correct format and within the constraints set by the application.<br> -Validation done in the browser is called client-side
+            validation, while validation done on the server is called server-side validation.<br> -You want to get the right data in the right format<br> -We want to protect the user's data<br> -We want to protect ourselves<br> -Built-in form validation
+            uses HTML5 form validation featuresThis validation generally doesn't require much JavaScript. Built-in form validation has better performance than JavaScript, but it is not as customizable as JavaScript validation.<br> -JavaScript validation
+            is coded using JavaScript. This validation is completely customizable, but you need to create it all (or use a library).<br><br> -required: Specifies whether a form field needs to be filled in before the form can be submitted.<br> minlength
+            and maxlength: Specifies the minimum and maximum length of textual data (strings)<br> min and max: Specifies the minimum and maximum values of numerical input types<br> type: Specifies whether the data needs to be a number, an email address,
+            or some other specific preset type.<br> pattern: Specifies a regular expression that defines a pattern the entered data needs to follow.<br><br>
+        </p>
+
+    </div>
+</body>
+
+<footer>
+    <li><a href="/week10/index.html">Back to Week 8</a></li>
+    <br> &copy; 2020 | Notes | Riley Nelson <br>
+</footer>
+
+</html>
