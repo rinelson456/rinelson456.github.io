@@ -2,6 +2,7 @@ body {
     background-image: url("https://cssanimation.rocks/demo/starwars/images/bg.jpg");
     text-align: center;
     word-wrap: normal;
+    color: white;
 }
 
 footer {
@@ -67,8 +68,8 @@ form {
     width: 379px;
     height: 379px;
     position: fixed;
-    top: 50%;
-    bottom: 75%;
+    top: 240%;
+    bottom: 200%;
     left: 0;
     right: 0;
     margin: auto;
@@ -117,6 +118,10 @@ form {
     border-color: lightgray;
     background-color: rgba(000, 0, 0, 0.75);
     border-radius: 25%;
+    max-width: 75%;
+    min-width: 30%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
 }
 
 #location {
@@ -124,6 +129,10 @@ form {
     border-color: lightgray;
     background-color: rgba(000, 0, 0, 0.75);
     border-radius: 25%;
+    max-width: 75%;
+    min-width: 40%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
 }
 
 .drpbttn {
@@ -131,7 +140,7 @@ form {
     background-color: #000000;
     border-color: #820000;
     margin-top: 2%;
-    border-radius: 25%;
+    border-radius: 30%;
 }
 
 .dropbtn:hover,
