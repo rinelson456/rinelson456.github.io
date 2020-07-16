@@ -1,0 +1,42 @@
+.earth {
+    width: 379px;
+    height: 379px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
+    background-image: url(https://i.pinimg.com/originals/5e/8d/77/5e8d7733d9e31bfc79c54a4e488f6f93.jpg);
+    transition: transform 200ms linear;
+    animation: rotate 4s linear infinite;
+}
+
+.earth:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: -20px -20px 50px 2px #000 inset;
+    border-radius: 50%;
+}
+
+.earth>div {
+    width: 200%;
+    height: 100%;
+    background-size: cover;
+}
+
+@keyframes rotate {
+    0% {
+        background-position: 630px 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}

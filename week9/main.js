@@ -1,5 +1,5 @@
 document.getElementById("drpbttn").addEventListener("click", () => {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("dropContent").classList.toggle("show");
 })
 
 window.onclick = function(event) {

@@ -4,24 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 13</title>
+    <title>Space Tracker</title>
     <link rel="stylesheet" href="/week13/styles/challenge.css">
 </head>
 
 <body>
-    <main>
+    <div class='dropdown'>
+        <button id='drpbttn' class='drpbttn'>Menu</button>
+        <div id='dropContent' class='dropContent'>
+            <a class='menuText' href="index.html">Week 13</a>
+        </div>
+    </div>
 
-    </main>
+    <div class="earth"></div>
 
 
     <footer>
-        <li><a href="/week13/index.html">Back to Week 13</a></li><br>
+
+        <br>
+        <div id="location"></div><br>
+        <div class='satellites' id="satellites"></div>
+        <div class='satelliteInfo' id="satelliteInfo"></div>
+        <div class='loader' id='loader'></div>
+        <br>
+
+        </div>
+
+        <form><br>NORAD ID(1 - 44,336)<br>
+            <input id="NORAD" type="number" value="25544"></input><br>Your Altitude (in meters)<br>
+            <input id="altitude" type="number" value="0"></input>
+        </form>
+        <button id="submit">Submit</button><br><br>
         <br> &copy; 2020 | Porfolio | Riley Nelson
         <br>
     </footer>
 
 
     <script type="module" src="challenge.js"></script>
+    <script src="/week13/main.js"></script>
 
 </body>
 
