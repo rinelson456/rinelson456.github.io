@@ -10,23 +10,6 @@ ul {
     text-align: center
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    background: rgb(252, 160, 150);
-}
-
-.show li {
-    display: block;
-}
-
 div p {
     text-align: left;
     margin: auto;
