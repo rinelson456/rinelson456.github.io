@@ -1,6 +1,7 @@
 const key = "RAK8KC-TDGHPL-ANGHE4-4HKJ";
 const baseURLTLE = "https://www.n2yo.com/rest/v1/satellite/tle/"
 const baseURLPos = "https://www.n2yo.com/rest/v1/satellite/positions/"
+const heroku = "https://cors-anywhere.herokuapp.com/"
 
 let location = document.getElementById("location");
 
@@ -29,7 +30,7 @@ window.onload = function() {
 
         showSpinner();
 
-        makeRequest(baseURLTLE + `${tle}&apiKey=${key}`).then(satellite => {
+        makeRequest(heroku + baseURLTLE + `${tle}&apiKey=${key}`).then(satellite => {
             displaySattellites(satellite);
         })
     }
@@ -47,16 +48,12 @@ function showPosition(position) {
     } else {
         tle = document.getElementById("NORAD").value;
     }
-    makeRequest(baseURLPos + `${tle}/${observerLat}/${observerLong}/${observerAlt}/${seconds}&apiKey=${key}`).then(satellite => {
+    makeRequest(heroku + baseURLPos + `${tle}/${observerLat}/${observerLong}/${observerAlt}/${seconds}&apiKey=${key}`).then(satellite => {
         displaySattellites(satellite);
     })
     location.innerHTML = "Your Latitude: " + position.coords.latitude +
         "<br>Your Longitude: " + position.coords.longitude;
 }
-
-// document.getElementById("NORAD").addEventListener("click", () => {
-//     alert('Type in any number from 1 to 44,336. The name of the satellite will the appear');
-// })
 
 document.getElementById("submit").addEventListener("click", () => {
     if (navigator.geolocation) {
