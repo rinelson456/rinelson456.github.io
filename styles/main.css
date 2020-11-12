@@ -4,6 +4,11 @@ body {
     height: 100%;
 }
 
+div {
+    margin: 0 auto;
+    text-align: center;
+}
+
 ul.header {
     list-style-type: none;
     margin: 0;
