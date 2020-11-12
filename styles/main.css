@@ -1,6 +1,7 @@
 body {
     background-color: rgb(223, 223, 223);
     text-align: center;
+    height: 100%;
 }
 
 ul.header {
@@ -27,12 +28,6 @@ li a:hover {
     background-color: #111;
 }
 
-div {
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 footer {
     margin: auto;
     width: 50%;
@@ -51,4 +46,38 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
+}
+
+.bgimg {
+    background-image: url('../picture/IMG_2644.jpg');
+    height: 1000px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.middle {
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+.middleLower {
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
